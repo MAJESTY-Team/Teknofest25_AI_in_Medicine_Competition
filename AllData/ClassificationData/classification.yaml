@@ -1,0 +1,6 @@
+train: data/train  # path to training data
+val: data/val  # path to validation data
+test: data/test  # path to test data
+
+nc: 2  # number of classes
+names: ['class1', 'class2'] 
