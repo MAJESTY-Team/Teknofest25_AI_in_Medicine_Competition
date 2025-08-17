@@ -1,0 +1,41 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta, shapes, fit}
+
+\begin{document}
+
+\begin{tikzpicture}[
+  node distance=2cm and 3cm,
+  box/.style={rectangle, draw, rounded corners, text centered, minimum height=1cm, minimum width=2.5cm},
+  arrow/.style={-Stealth, thick},
+  helper/.style={rectangle, draw, dashed, inner sep=0.5cm, rounded corners}
+]
+
+% Nodes
+\node[box] (yolo) {Yolo ana model};
+
+\node[helper, below=of yolo] (helper) {
+  \begin{tabular}{c}
+    İkili sınıflandırma sistemi\\
+    \hline
+    HiperAkut-Normal\\
+    HiperAkut-Subakut\\
+    Normal-Subakut
+  \end{tabular}
+};
+
+\node[box, below=of helper] (teshis) {Teşhis};
+
+\node[box, right=of teshis] (gemma) {Google MedGemma};
+
+\node[box, below=of gemma] (output) {Klinik açıklama ve ekstra açıklamalar};
+
+% Connections
+\draw[arrow] (yolo) -- (helper);
+\draw[arrow] (helper) -- (teshis);
+\draw[arrow] (teshis) -- node[midway, above] {Teşhis ile birlikte görsel} (gemma);
+\draw[arrow] (gemma) -- (output);
+
+\end{tikzpicture}
+
+\end{document}

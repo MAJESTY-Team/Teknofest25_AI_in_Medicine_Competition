@@ -1,0 +1,10 @@
+*.vscode
+*.zip
+*.rar
+*.ipynb_checkpoints
+*__pycache__/
+2/TrainingCodes/Vit/saved_models*
+*.dcm
+2/Yolo/Seri*
+*.png
+*.zip.*
