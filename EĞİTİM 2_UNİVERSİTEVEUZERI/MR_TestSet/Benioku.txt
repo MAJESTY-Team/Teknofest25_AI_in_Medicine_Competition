@@ -1,0 +1,2 @@
+Etiketleri içeren JSON dosyası klasör içerisindedir.
+Bu aşamada ek olarak bazı olgulara ait sekans isimleri içeren excel dosyası da paylaşılmıştır(DWI,T2AFLAIR, ADC). DWI içerisindeki serilerde b ağırlıklı imajlar vardır. b0 ağırlıklı imajlar T2Adır.
