@@ -4,6 +4,10 @@
 
 This research project, developed for the TEKNOFEST 2025 AI in Healthcare Competition, focuses on two critical tasks in neuroimaging: **Ischemic Stroke Detection from CT Scans** and **Temporal Classification of Stroke from Diffusion MRI**. The project leverages state-of-the-art computer vision architectures (YOLOv8, YOLOv11), investigates the efficacy of Vision Transformers (ViT), and introduces a novel hierarchical decision mechanism supported by Large Language Models (LLMs) for clinical explainability.
 
+## Project Conclusion
+
+This project has earned us the **5'th place among 520 teams** in 2025 Teknofest AI in Healthcare competition.
+
 ## 1. Experimental Methodologies
 
 ### Task A: Stroke Detection from CT Images
